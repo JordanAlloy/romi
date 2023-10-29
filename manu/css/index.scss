@@ -1,0 +1,525 @@
+// USING SCSS DSTRUCTURING TO EASE CODE
+// styling the body
+*{
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    background:  #191919;
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+// styling the navbar
+.navbar{
+    padding: 5px;
+    height: 6.2rem;
+    backdrop-filter: 4px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    background: transparent 0 0 no-repeat padding-box;
+    border-bottom: 1px solid hsla(0,0%,100%,.062745098);
+    box-shadow: 0 5px 10px 0 rgba(7, 7, 7, 0.298);
+    padding: 5px;
+    .container-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 10px 20px;
+        
+    }
+    .logo-img{
+        width: 70px;
+        margin: 10px;
+    }
+    // styling all links
+    a{
+        color: #c2c2c2;
+        text-decoration: none;
+        
+    }
+    .menu-open{
+        font-size: 17px;
+        cursor: pointer;
+        color:hsla(0, 0%, 93%, 0.643);
+        &:hover{
+            color: rgba(255, 255, 255, 0.873);
+        }
+    }
+}
+
+
+
+// navbar menu's styling goes here
+nav.mobile-btn{
+    display: block;
+}
+nav{
+    display: none;
+}
+.navbar-menus{
+    font-weight: 500;
+    position: fixed;
+    z-index: 999;
+    line-height: 40px;
+    background: #191919ac;
+    backdrop-filter: blur(20px);
+    height: 100vh;
+    width: 50vw;
+    left: 0;
+    top: 0;
+    padding: 15px 16px;
+    box-shadow: 0 5px 10px 0 rgba(7, 7, 7, 0.298);
+    font-size: 12px;
+    margin: 0 -2em 0 -1em;
+
+    .menu-options{
+        margin-top: 5em;
+        float: left;
+        margin-left: -3em;
+        line-height: 50px;
+        
+        .home{
+            text-align: left;
+        }
+        .right{
+            margin-left: 15px;
+        }
+    }
+    .menu-close{
+        margin-top: -6.3em;
+        width: 30px;
+        float: right;
+        cursor: pointer;
+        margin-right: -6em;
+    }
+    .logo-png{
+        display: flex;
+        margin-top: -6em;
+        h5{
+            margin-left: -18px;
+            margin-right: 60px;
+            margin-top: 10px;
+        }
+    }
+    .home{
+        
+        li{
+            list-style-type: none;
+            &:hover{
+                background-color:  rgba(255, 255, 255, 0.084);;
+            }
+        }
+    }
+}
+
+
+
+//  styling trade, connect and .Eth menu's here
+.app-header-user{
+    .container-user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     .trade{
+        background: #3EB489;
+        padding: 10px ;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #FFFFFF;
+        a{
+            &:hover{
+                background: hsla(0,0%,93.3%,0.0784313725490196);
+                color: white;
+            }
+        }
+     }
+     .connect{
+        margin-left: 2em;
+        padding: 5px 10px;
+        background: transparent;
+        border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+        border-radius: 5px;
+        font-weight: 600;
+        color: #FFFFFF;
+        a{
+            &:hover{
+                background: hsla(0,0%,93.3%,0.0784313725490196);
+                color: white;
+            }
+        }
+        i{
+            margin: 5px;
+        }
+       }
+       .eth{
+        margin-left: 1em;
+        padding: 5px 10px;
+        background: transparent;
+        border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+        border-radius: 5px;
+    
+        &:hover{
+            background: hsla(0,0%,93.3%,0.0784313725490196);
+        }
+        .fa-ethereum{
+            background-color: white;
+            color: black;
+            padding: 5px 8px;
+            border-radius: 400px;
+            margin-right: 1px;
+    
+        }
+        .fa-ellipsis-vertical{
+            margin-right: 10px;
+            border-left: 1px solid hsla(0, 0%, 100%, 0.33);
+            padding: 5px;
+        }
+    }
+
+    }   
+
+}
+
+
+// Home information body styling goes here
+.Home-sec{
+  .container-info{
+    .launch{
+        padding: 5px;
+        font-weight: 600;
+        color: #FFFFFF;
+        a{
+            text-decoration: none;
+            background: #3EB489;
+            padding: 10px;
+            color: #cecece;
+            border-radius: 5px;
+            font-size: 10px;
+            &:hover{
+                background: #114d37;
+            }
+
+        }
+    }
+    padding: 25px;
+    h1{
+        font-weight: 800;
+        font-size: 40px;
+        
+    }
+    p{
+       color: #cecece; 
+       font-weight: 700;
+    }
+  }
+}
+
+// rating styling goes here
+.container-ratings{
+    border-bottom: 1px solid hsla(0,0%,100%,0.1607843137254902);
+    .img-ratings{
+        display: flex;
+        align-items: center;
+        margin: 25px;
+        padding: 25px;
+        background: transparent;
+        border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+        border-radius: 5px;
+        font-weight: 600;
+        color: #FFFFFF;
+        box-shadow: 0 5px 10px 0 rgba(7, 7, 7, 0.298);
+    
+        img{
+            padding: 20px;
+        }
+        .amount{
+            margin-left: -5.7em;
+        }
+        .amount1{
+            margin-left: -7.2em;
+        }
+        .amount2{
+            margin-left: -11em;
+        }
+        .trading-info{
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    }
+
+}
+
+// styling the benefit sections
+.benefit{
+    // .container-benefit{
+    //     // grid-template-columns: auto auto;
+    //     // display: grid;
+    // }
+    margin: 10px;
+    margin-top: 50px;
+    text-align: left;
+    .img-desc{
+        display: flex;
+        align-items: center;
+        margin-bottom: -1em;
+        img{
+            margin: 10px;
+        }
+    }
+    .info-desc{
+        margin: 25px;
+        p{
+            font-size: 14px;
+            text-overflow: clip;
+        }
+    }
+}
+
+//  styling the Two tokens create our system section
+.tokens{
+    margin: 6em 0 0 2em;
+    .img-token{
+        .zome{
+            width: 80%;
+            height:100%;   
+            margin: 25px;
+            padding: 25px;
+            background: transparent;
+            border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+            border-radius: 5px;
+            font-weight: 600;
+            color: #FFFFFF;
+            box-shadow: 0 5px 10px 0 rgba(7, 7, 7, 0.298);
+            // &:hover{
+            //     transform: translate(36px);
+            // }
+
+            .img-png{
+                display: flex;
+            }
+            img{
+                width: 15%;
+                margin: 5px;
+            }
+            p{
+                font-weight: 600;
+            }
+            h6{
+                font-size: 15px;
+                font-family: sans-serif;
+                color: #cececedc;
+            }
+            button{
+                width: 60vw;
+                text-decoration: none;
+                background: #3EB489;
+                padding: 10px;
+                color: white;
+                border-radius: 5px;
+                font-size: 10px;
+                border: none;
+                margin: 10px;
+                font-size: 12px;
+                font-family: montserrat;
+                
+                &:hover{
+                    background: #114d37;
+                }
+            }
+            .read{
+                width: 60vw;
+                padding: 10px;
+                background: transparent;
+                border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+                border-radius: 5px;
+                color: #FFFFFF;
+                &:hover{
+                    background: hsla(0,0%,100%,0.1607843137254902);;
+                }
+            }
+            
+        }
+
+    }
+}
+
+// styling the footer
+.footer{
+    border-top: 1px solid hsla(0,0%,100%,0.1607843137254902);
+    margin-top: 40px;   
+    background: black; 
+    .img-footer{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        margin-bottom:-20px;
+        margin-left: 1em;
+        img{
+            width: 30%;
+            margin-right: -2em;
+        }
+        h4{
+            margin-left: -0.7em;
+            margin-top: 4em;
+        }
+        
+    }
+    // styling socials
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            margin: 10px;
+            font-size: 20px;
+            color: #cecece;
+            &:hover{
+                color: white;
+                transition: ease-in-out;
+            }
+        }
+    }
+
+    // styling the terms and conditions
+    .terms-conditions{
+        text-align: center;
+    }
+
+}
+
+
+// DASHBOARD STYLING GOES HERE
+// Stats
+.stats{
+    margin: 20px;
+    .paragraph{
+        margin-left: 20px;
+        margin-top: -1em;
+    }
+
+    .stats-img{
+        display: flex;
+        margin-left: 20px;
+        .image{
+            margin: 35px;
+            margin-left: 5px;
+        }
+        h3{
+            font-size: 30px;
+            margin-bottom: -4em;
+            
+        }
+    }
+    h6{
+        font-size: 15px;
+    }
+
+    .overview-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0.2px;
+        margin-top: -.6em;
+
+        .prices{
+            cursor: help;
+            position: relative;
+            text-decoration: underline 1px dashed rgba(255,255,255,0.6);
+        }
+        .list{
+            font-weight: 700;
+            color: rgba(255,255,255,0.6); ;
+        }
+    }
+    .overview{
+        margin: 20px;
+            width: 80vw;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid hsla(0,0%,100%,0.1607843137254902);
+            border-radius: 5px;
+            color: #FFFFFF;
+            
+            h6{
+                border-bottom: 1px solid hsla(0,0%,100%,0.1607843137254902);
+                padding: 10px;
+                margin-top: 1px;
+            }
+            &:hover{
+                background: hsla(0, 0%, 100%, 0);
+                box-shadow: 0 5px 10px 0 rgba(7, 7, 7, 0.298);
+            }
+    }
+}
+
+
+// styling the nav media query
+@media only screen and (min-width:320px) {
+    .navbar{
+        margin: 0;
+        .logo-img{
+            width: 3.5em;
+            margin-left: -3em;
+        }
+        .menu-open{
+            margin-right: 1.5em;
+        }
+    }
+    .app-header-user{
+        .container-user{
+         .trade{
+            padding: 5px 8px;
+            margin-right: -2em;
+            a{
+               font-size: 10px; 
+            }
+         }
+         .connect{
+            font-size: 10px;
+            padding: 0px 5px 0px 2px;
+            margin-top:2em;
+            margin-bottom: 1.4em;
+            margin-right: -1em;
+            margin-left: 3.5em;
+            a i{
+                padding-top: 0.6em;
+            }
+    
+        }   
+        .eth{
+            margin-top: 1.3em;
+            margin-bottom: 15px;
+            padding: -2em;
+        } 
+    }
+    
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
